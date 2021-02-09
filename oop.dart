@@ -1,21 +1,13 @@
-class Say {
-  String _name;
-
-  void getName(String x) {
-    this._name = x;
-  }
-
-  String setName() {
-    // return _name;
-    return this._name;
-  }
-}
+import 'say.dart';
 
 void main() {
-  Say say;
+  Say name, to;
 
-  say = Say();
-  say.getName("Hafid");
+  name = Say();
+  name.setName("Hafid");
 
-  print("Hai " + say.setName());
+  to = Say();
+  to.people = "Ardi";
+
+  print("Hai " + to.people + " My name is " + name.getName());
 }
