@@ -24,6 +24,7 @@ void main() {
     'iodine',
     'astatine'
   };
+
   for (String halo in halogens) {
     print("Set $halo");
   }
