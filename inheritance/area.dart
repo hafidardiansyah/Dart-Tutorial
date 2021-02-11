@@ -1,21 +1,37 @@
+import 'flaying_hero.dart';
 import 'hero.dart';
+import 'hero_i.dart';
 import 'hero_x.dart';
+import 'hero_y.dart';
 
 void main() {
   Hero hero = HeroX();
   HeroX heroX = HeroX();
+  HeroY heroY = HeroY();
+  HeroI heroI = HeroI();
 
-  print((hero as HeroX).xLaser());
+  // print((hero as HeroX).xLaser());
 
   List<Hero> heros = [];
   heros.add(heroX);
+  heros.add(heroY);
+  heros.add(heroI);
+
+  // print(heroI.fly());
 
   for (Hero hero in heros) {
-    if (hero is HeroX) {
-      hero.money = 10;
-      print(hero.killMonster());
-      print("Money: " + hero.money.toString());
+    // if (hero is HeroX) {
+    //   hero.money = 10;
+    //   print(hero.move());
+    //   print(hero.killMonster());
+    //   print("Money: " + hero.money.toString());
+    // }
+    if (hero is FlayingHero) {
+      print((hero as FlayingHero).fly());
     }
+    // if (hero is HeroY) {
+    //   print(hero.xLaser());
+    // }
   }
 
   // print(hero.killMonster());
