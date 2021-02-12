@@ -28,6 +28,7 @@ void main() {
     // }
     if (hero is FlayingHero) {
       print((hero as FlayingHero).fly());
+      print(hero.serang());
     }
     // if (hero is HeroY) {
     //   print(hero.xLaser());
