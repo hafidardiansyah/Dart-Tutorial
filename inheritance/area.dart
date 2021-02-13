@@ -4,6 +4,10 @@ import 'hero_i.dart';
 import 'hero_x.dart';
 import 'hero_y.dart';
 
+// inheritance - extends = membagikan/sharing behavior/perilaku kepada kelas turunannya hanay bisa 1
+// interface - implements = memaksakan perilaku yang dimiliki interface kepada kelas yang menggunakannya, sebuah class dapat melakukan implement banyak interface
+// with - mixin = menambahkan perilaku yang dimiliki mixin kepada turunannya, sebuah class dapat menggunakan banyak mixin
+
 void main() {
   Hero hero = HeroX();
   HeroX heroX = HeroX();
