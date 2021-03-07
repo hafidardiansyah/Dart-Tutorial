@@ -2,11 +2,9 @@ class Person {
   String name;
   Function(String name) doingHobby;
 
-  Person(this.name, {this.doingHobby});
+  Person(this.name, {required this.doingHobby});
 
   void takeARest() {
-    if (doingHobby != null) {
-      doingHobby(name);
-    }
+    doingHobby(name);
   }
 }

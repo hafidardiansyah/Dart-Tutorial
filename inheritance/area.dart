@@ -9,7 +9,7 @@ import 'hero_y.dart';
 // with - mixin = menambahkan perilaku yang dimiliki mixin kepada turunannya, sebuah class dapat menggunakan banyak mixin
 
 void main() {
-  Hero hero = HeroX();
+  // Hero hero = HeroX();
   HeroX heroX = HeroX();
   HeroY heroY = HeroY();
   HeroI heroI = HeroI();

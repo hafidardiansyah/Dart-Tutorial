@@ -1,7 +1,7 @@
 class Say {
   // field
-  String _name;
-  String _people;
+  String? _name;
+  String? _people;
 
   // getter setter
   void setName(String value) {
@@ -14,8 +14,8 @@ class Say {
   }
 
   // getter setter
-  String getName() => _name;
+  String getName() => _name!;
 
   // propertie getter
-  String get people => _people;
+  String get people => _people!;
 }

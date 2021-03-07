@@ -5,7 +5,7 @@
 // Function
 int luasPersegi({int sisi = 0}) => sisi * sisi;
 
-String say(String name, [String to]) => name + ((to == null) ? '' : to);
+String say(String name, [String? to]) => name + ((to == null) ? '' : to);
 
 int doMathOperator(int number1, int number2, Function(int, int) operator) =>
     operator(number1, number2);

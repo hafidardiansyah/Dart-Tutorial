@@ -1,5 +1,5 @@
 class Person {
-  String name;
+  late String name;
 
   Person([String name = 'no name']) {
     print("constructor person");
