@@ -1,10 +1,11 @@
-import 'kompleks.dart';
+import 'rumah.dart';
 
 void main() {
-  Kompleks kompleks = Kompleks();
+  Rumah rumah = Rumah();
 
-  kompleks.namaRumah = 'Rumah hafid';
-  kompleks.nomerRumah = 77;
+  rumah.pemilikRumah = 'Hafid';
+  rumah.nomerRumah = 77;
+  rumah.alamatRumah = 'Malang';
 
-  print(kompleks.identitas());
+  print('Pemilik rumah : ' + rumah.pemilikRumah);
 }
