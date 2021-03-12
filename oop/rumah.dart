@@ -1,10 +1,11 @@
 import 'pemilik.dart';
 
 class Rumah extends Pemilik {
+  // field
   late String _alamatRumah;
   static int _nomerRumah = 0;
 
-  // property - get & set
+  // property - getters & setters
   String get alamatRumah {
     return _alamatRumah;
   }
